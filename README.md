@@ -26,7 +26,7 @@ UEditor 前台文件完全无修改,可自由gulp等工具部署到生产环境
 To get the latest version of Laravel Exceptions, simply add the following line to the require block of your `composer.json` file:
 
 ```
-"costa92/laravel-editor": "~1.4"
+"costa92/laravel-editor": "~1.0"
 ```
 or 
 ```
