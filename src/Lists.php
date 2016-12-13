@@ -1,4 +1,5 @@
-<?php namespace Stevenyangecho\UEditor;
+<?php
+namespace Costa92\UEditor;
 
 
 class Lists

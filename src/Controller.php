@@ -1,11 +1,12 @@
-<?php namespace Stevenyangecho\UEditor;
+<?php 
+namespace Costa92\UEditor;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
-use Stevenyangecho\UEditor\Uploader\UploadScrawl;
-use Stevenyangecho\UEditor\Uploader\UploadFile;
-use Stevenyangecho\UEditor\Uploader\UploadCatch;
+use Costa92\UEditor\Uploader\UploadScrawl;
+use Costa92\UEditor\Uploader\UploadFile;
+use Costa92\UEditor\Uploader\UploadCatch;
 
 class Controller extends BaseController
 {

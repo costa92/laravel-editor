@@ -1,4 +1,5 @@
-<?php namespace Stevenyangecho\UEditor;
+<?php 
+namespace Costa92\UEditor;
 
 
 use Illuminate\Support\ServiceProvider;
@@ -31,7 +32,7 @@ class UEditorServiceProvider extends ServiceProvider
 
 
         $this->publishes([
-            realpath(__DIR__ . '/../resources/public') => public_path() . '/laravel-u-editor',
+            realpath(__DIR__ . '/../resources/public') => public_path() . '/laravel-editor',
         ], 'assets');
 
 
@@ -41,12 +42,12 @@ class UEditorServiceProvider extends ServiceProvider
         //定义多语言
         //根据系统配置 取得 local
         $locale = str_replace('_', '-', strtolower(config('app.locale')));
-        $file = "/laravel-u-editor/lang/$locale/$locale.js";
+        $file = "/laravel-editor/lang/$locale/$locale.js";
         $filePath = public_path() . $file;
 
         if (!\File::exists($filePath)) {
             //Default is zh-cn
-            $file = "/laravel-u-editor/lang/zh-cn/zh-cn.js";
+            $file = "/laravel-editor/lang/zh-cn/zh-cn.js";
         }
         \View::share('UeditorLangFile', $file);
 
@@ -58,7 +59,7 @@ class UEditorServiceProvider extends ServiceProvider
 
         //定义路由
         $router->group($config, function ($router) {
-            $router->any('/laravel-u-editor-server/server', 'Controller@server');
+            $router->any('/laravel-editor-server/server', 'Controller@server');
         });
     }
 
