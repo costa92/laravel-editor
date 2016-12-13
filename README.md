@@ -11,20 +11,6 @@ UEditor 前台文件完全无修改,可自由gulp等工具部署到生产环境
 
 支持本地和七牛云存储,默认为本地上传 public/uploads
 
-##ChangeLog
- 1.4.0 版  支持 laravel5.3 更新百度 UEditor 1.4.3.3
-
- 1.3.0 版  改变服务器请求路由 为 /laravel-editor-server/server 
-           老版本升级,需要 更改 public/ueditor.config.js 
-          
-            , serverUrl: "/laravel-editor-server/server"
-
- 1.2.5 版 增加对Laravel5.* 的支持,更新百度 UEditor 1.4.3.1
- 
- 1.2 版 增加对Laravel5.1 的支持,修改一些说明
- 
- 1.1 版 增加七牛云存储的支持
-
 ## 重要提示
 有些同学配置总是不成功,除了一般设置,权限等基础问题,很大的可能是 middleware和 csrf 没配置好.
 因为这两点对于服务器的安全至关重要,因此都是必须配置正确的,否则无法运行.
@@ -40,7 +26,11 @@ UEditor 前台文件完全无修改,可自由gulp等工具部署到生产环境
 To get the latest version of Laravel Exceptions, simply add the following line to the require block of your `composer.json` file:
 
 ```
-"costa92/laravel-u-editor": "~1.4"
+"costa92/laravel-editor": "~1.4"
+```
+or 
+```
+   composer require costa92/laravel-editor
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -114,3 +104,5 @@ The detail useage Please see [http://ueditor.baidu.com](http://ueditor.baidu.com
 ## License
 
 Laravel 5  UEditor is licensed under [The MIT License (MIT)](LICENSE).
+
+
