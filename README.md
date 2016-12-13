@@ -37,7 +37,7 @@ You'll then need to run `composer install` or `composer update` to download it a
 
 Once Laravel Exceptions is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
 
-* `'Costa92\UEditor\UEditorServiceProvider'`
+* `Costa92\UEditor\UEditorServiceProvider::class`
 
 then run 
 
@@ -58,7 +58,7 @@ then run
   如果是单纯本机测试,请将 
   `// 'middleware' => 'auth',` 直接注释掉,如果留 `'middleware'=>''`空值,会产生bug,原因不详.
  
- 所有UEditor 的官方资源,会放在 public/laravel-u-editor/ ,可以根据自己的需求,更改.
+ 所有UEditor 的官方资源,会放在 public/laravel-editor/ ,可以根据自己的需求,更改.
 
 
 ## Usage
